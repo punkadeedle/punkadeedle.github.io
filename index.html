@@ -1,79 +1,184 @@
 <!doctype html>
 
-<html lang="en">
+<html lang="en" class="js-focus-visible" data-js-focus-visible>
 <head>
   <meta charset="utf-8">
   <meta name="description" content="KB">
   <meta name="author" content="punkadeedle">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <link rel="icon" href="assets/images/logo1.png">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/stylesheets/animate.css">
   <link rel="stylesheet" href="assets/stylesheets/styles.css">
 
   <script src="https://kit.fontawesome.com/9a00893d38.js" crossorigin="anonymous"></script>
   <script src="https://code.jquery.com/jquery-git2.min.js"></script>
+  <script src="assets/scripts/wow.min.js"></script>
 
   <title>Kyanne Baker</title>
 </head>
 
 <body>
-  <div id="header-partial"></div>
-  <nav class="navbar fixed-top navbar-expand-md navbar-light bg-light">
-    <div class="container-fluid">
-      <div class="navbar-header">
-        <a href="/"><div class="navbar-brand"><i class="fas fa-home"></i>Test</div></a>
+    <header class="header">
+      <div class="container-fluid">
+        <nav id="mainNav" class="navbar fixed-top navbar-expand-lg navbar-light">
+          <a class="navbar-brand" href="#">
+            Kyanne Baker
+            <!--<img id="logo-img" src="assets/images/KB-logo2.png"></img>-->
+          </a>
+            <ul class="navbar-nav d-flex flex-row">
+              <li class="nav-item col-auto">
+                <a class="nav-link" href="https://www.linkedin.com/in/kyanne-baker-9262a44a/">
+                  <i class="fa fa-linkedin"></i>
+                </a>
+              </li>
+              <li class="nav-item col-auto">
+                <a class="nav-link" href="https://github.com/punkadeedle">
+                  <i class="fa fa-github"></i>
+                </a>
+              </li>
+              <li class="nav-item col-auto">
+                <a class="nav-link" href="https://dev.to/punkadeedle">
+                  <i class="fab fa-dev" alt="punkadeedle's DEV Community Profile"></i>
+                </a>
+              </li>
+            </ul>
+            <button id="toggler" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#projects">Portfolio</a>
+              </li>
+              <li class="d-none nav-item">
+                <a class="nav-link" href="#">Blog</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
       </div>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse d-flex" id="navbarSupportedContent">
-        <ul class="navbar-nav">
-          <li class="nav-item nav-link" data-toggle="modal" data-target="#contactModal" data-whatever="@mdo" onclick="toggleModal()">About</li>
-        </ul>
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item nav-link" data-toggle="modal" data-target="#contactModal" data-whatever="@mdo" onclick="toggleModal()">Contact</li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+    </header>
 
-  <div id="modal-partial"></div>
-  <!-- BEGIN OF LOGINMODAL section -->
-  <div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="loginLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="loginLabel">It's a modal</h5>
+    <div id="page-content" class="wrapper container">
+      <!--INTRO SECTION -->
+      <div class="row align-items-center" id="intro">
+        <div class="col-md-6 text-center order-2 order-md-1">
+          <div class="row justify-content-center">
+          <div class="col-10 col-md-12">
+            <h1 class="wow fadeInUp">Hello, I'm Kyanne!</h1>
+            <p class="lead wow fadeInUp">
+              I'm a software developer who loves logic puzzles and solving problems.
+              I consider myself a lifelong student, and I hope to never stop being curious.
+            </p>
+          </div>
+          </div>
         </div>
-        Hello again!
-        <div>
-          Don't have an account?
-          <span data-toggle="modal" data-target="#loginModal" data-whatever="@mdo">
-            <a data-toggle="modal" data-target="#signupModal" data-whatever="@mdo"> Sign up!</a>
-          </span>
+        <div class="col-md-6 order-1 order-md-2 py-4">
+          <img class="profile-img img-fluid wow fadeInUp" src="assets/images/profile3.png"></img>
         </div>
       </div>
+
+      <!--ABOUT SECTION -->
+      <div class="row section-separator align-items-center" id="about">
+        <div class="col-md-6 text-center order-2 order-md-2">
+          <div class="row justify-content-center">
+          <div class="col-10 col-md-12">
+            <h2 class="wow fadeInUp">About</h2>
+            <p class="lead wow fadeInUp">
+              Reader <span> | </span> Coder <span> | </span> Rock Climber
+            </p>
+            <p class="wow fadeInUp">
+              I have worked with the following technologies...
+            </p>
+            <p class="wow fadeInUp">
+              <img src="https://img.shields.io/badge/-JavaScript-white?style=flat-square&logo=javascript"></img>
+              <img src="https://img.shields.io/badge/-JQuery-white?style=flat-square&logo=jQuery&logoColor=blue"></img>
+              <img src="https://img.shields.io/badge/-NodeJS-white?style=flat-square&logo=Node.js"></img>
+              <img src="https://img.shields.io/badge/-Express-white?style=flat-square&logo=express&logoColor=black"></img>
+              <img src="https://img.shields.io/badge/-MongoDB-white?style=flat-square&logo=mongodb"></img>
+              <img src="https://img.shields.io/badge/-MySQL-white?style=flat-square&logo=MySQL"></img>
+              <img src="https://img.shields.io/badge/-HTML-white?style=flat-square&logo=html5"></img>
+              <img src="https://img.shields.io/badge/-CSS-white?style=flat-square&logo=css3&logoColor=blue"></img>
+              <img src="https://img.shields.io/badge/-Bootstrap-white?style=flat-square&logo=bootstrap"></img>
+              <img src="https://img.shields.io/badge/-Git-white?style=flat-square&logo=git"></img>
+              <img src="https://img.shields.io/badge/-GitHub-white?style=flat-square&logo=github&logoColor=black"></img>
+              <img src="https://img.shields.io/badge/-Linux-white?style=flat-square&logo=linux&logoColor=black"></img>
+              <img src="https://img.shields.io/badge/-Heroku-white?style=flat-square&logo=Heroku&logoColor=purple"></img>
+            </p>
+            <p class="wow fadeInUp">
+              ... and am actively learning these
+            </p>
+            <p class="wow fadeInUp">
+              <img src="https://img.shields.io/badge/-React-white?style=flat-square&logo=react"></img>
+              <img src="https://img.shields.io/badge/-Python-white?style=flat-square&logo=python&logoColor=yellow"></img>
+              <img src="https://img.shields.io/badge/-Docker-white?style=flat-square&logo=docker&logoColor=blue"></img>
+              <img src="https://img.shields.io/badge/-Kubernetes-white?style=flat-square&logo=kubernetes&logoColor=blue"></img>
+            </p>
+          </div>
+          </div>
+        </div>
+        <div class="col-md-6 order-1 order-md-1 py-4">
+          <img class="profile-img img-fluid wow fadeInUp" src="assets/images/kb-climb-tpg-digital.png"></img>
+        </div>
+      </div>
+
+      <!--PROJECTS SECTION -->
+      <div class="d-none row section-separator justify-content-center" id="projects">
+        <div class="card wow fadeInUp col-sm-12 col-md-4" style="width: 18rem;">
+          <img class="card-img-top" src="..." alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Calendar</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+        <div class="card wow fadeInUp col-sm-12 col-md-4" style="width: 18rem;">
+          <img class="card-img-top" src="..." alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Photo Site</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+        <div class="card wow fadeInUp col-sm-12 col-md-4" style="width: 18rem;">
+          <img class="card-img-top" src="..." alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Something Else</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="push"></div>
     </div>
-  </div>
 
-
-  <div id="page-content" class="container-fluid">
-    <h1>Hello World!</h1>
-  </div>
-
-  <div id="footer-partial"></div>
   <footer class="footer">
-    <div class="container-fluid">
-      <span class="text-muted">Copyright &copy; KB</span>
+    <div class="row container-fluid">
+      <span class="col-auto text-muted">&copy; 2021 KB</span>
+      <a class="col-auto" href="https://www.linkedin.com/in/kyanne-baker-9262a44a/">
+        <i class="fa fa-linkedin" alt="Kyanne's LinkedIn Profile"></i>
+      </a>
+      <a class="col-auto" href="https://github.com/punkadeedle">
+        <i class="fa fa-github" alt="punkadeedle's GitHub Profile"></i>
+      </a>
+      <a class="col-auto" href="https://dev.to/punkadeedle">
+        <i class="fab fa-dev" alt="punkadeedle's DEV Community Profile"></i>
+      </a>
     </div>
   </footer>
 
 
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
   <script src="assets/scripts/script.js"></script>
 </body>
 </html>
