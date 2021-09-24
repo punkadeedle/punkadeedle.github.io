@@ -45,6 +45,11 @@ body {
 .profile-img {
   width: 75%;
   height: auto;
+}
+
+.rounded-custom {
+  width: 75%;
+  height: auto;
   border-radius: 42%;
 }
 
